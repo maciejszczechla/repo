@@ -3,7 +3,7 @@
   gather_facts: false
   vars:
     date: "{{ '%Y-%m-%d-%H:%M:%S' | ansible.builtin.strftime }}"
-    backup_folder: /home/mszczechla/playbook-ansible-git/router-config
+    backup_folder: /home/mszczechla/playbook-ansible-git/router-config   #router-config to repo gita a plabook-ansible-git miejscie gdzie ejst plaubook 
     commit_message: "{{ inventory_hostname }} config backup - {{ date }}"
 
   tasks:
